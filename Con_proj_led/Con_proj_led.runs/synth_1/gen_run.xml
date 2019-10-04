@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570154167">
+  <File Type="PA-TCL" Name="led.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="led_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="led_reports.tcl"/>
+  <File Type="RDS-RDS" Name="led.vds"/>
+  <File Type="RDS-UTIL" Name="led_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="led_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="led.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="led_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="led_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/led.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="led"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/led.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2017">
+      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="RepFanoutThreshold">400</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="FsmExtraction">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

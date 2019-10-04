@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ" --include "../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../Con_proj_led.srcs/sources_1/new/led.v" \
+"../../../../Con_proj_led.srcs/sim_1/new/led_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

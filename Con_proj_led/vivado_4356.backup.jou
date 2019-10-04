@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 30 18:52:30 2019
+# Process ID: 4356
+# Current directory: F:/FPGA_Contest_Proj/Con_proj_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5944 F:\FPGA_Contest_Proj\Con_proj_led\Con_proj_led.xpr
+# Log file: F:/FPGA_Contest_Proj/Con_proj_led/vivado.log
+# Journal file: F:/FPGA_Contest_Proj/Con_proj_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.runs/impl_1/led.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.runs/impl_1/led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+file mkdir F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v w ]
+add_files -fileset sim_1 F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top led_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source led_tb.tcl
+close_sim

@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct  3 14:17:49 2019
+# Process ID: 1104
+# Current directory: F:/FPGA_Contest_Proj/Con_proj_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5700 F:\FPGA_Contest_Proj\Con_proj_led\Con_proj_led.xpr
+# Log file: F:/FPGA_Contest_Proj/Con_proj_led/vivado.log
+# Journal file: F:/FPGA_Contest_Proj/Con_proj_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.xpr
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name CLK_400MHZ -dir f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {CLK_400MHZ} CONFIG.CLKOUT2_USED {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400} CONFIG.CLKOUT3_USED {false} CONFIG.CLKOUT4_USED {false} CONFIG.CLKOUT5_USED {false} CONFIG.CLKOUT6_USED {false} CONFIG.CLKOUT7_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.500} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.MMCM_CLKOUT3_DIVIDE {1} CONFIG.MMCM_CLKOUT4_DIVIDE {1} CONFIG.MMCM_CLKOUT5_DIVIDE {1} CONFIG.MMCM_CLKOUT6_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {101.114} CONFIG.CLKOUT2_JITTER {130.958} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {130.958} CONFIG.CLKOUT3_PHASE_ERROR {98.575} CONFIG.CLKOUT4_JITTER {130.958} CONFIG.CLKOUT4_PHASE_ERROR {98.575} CONFIG.CLKOUT5_JITTER {130.958} CONFIG.CLKOUT5_PHASE_ERROR {98.575} CONFIG.CLKOUT6_JITTER {130.958} CONFIG.CLKOUT6_PHASE_ERROR {98.575} CONFIG.CLKOUT7_JITTER {130.958} CONFIG.CLKOUT7_PHASE_ERROR {98.575}] [get_ips CLK_400MHZ]
+generate_target {instantiation_template} [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/CLK_400MHZ/CLK_400MHZ.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/CLK_400MHZ/CLK_400MHZ.xci]
+catch { config_ip_cache -export [get_ips -all CLK_400MHZ] }
+export_ip_user_files -of_objects [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/CLK_400MHZ/CLK_400MHZ.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/CLK_400MHZ/CLK_400MHZ.xci]
+launch_runs -jobs 2 CLK_400MHZ_synth_1
+export_simulation -of_objects [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/CLK_400MHZ/CLK_400MHZ.xci] -directory F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files -ipstatic_source_dir F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/modelsim} {questa=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/questa} {riviera=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/riviera} {activehdl=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_0 -dir f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {12} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {3} CONFIG.CLKOUT1_JITTER {90.074} CONFIG.CLKOUT1_PHASE_ERROR {87.180}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 2 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files f:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files -ipstatic_source_dir F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/modelsim} {questa=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/questa} {riviera=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/riviera} {activehdl=F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source led_tb.tcl
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source led_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.runs/impl_1/led.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.runs/impl_1/led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.runs/impl_1/led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
