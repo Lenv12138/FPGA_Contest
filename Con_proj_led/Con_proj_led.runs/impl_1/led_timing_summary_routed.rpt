@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Oct  4 10:04:08 2019
+| Date         : Fri Oct  4 10:51:11 2019
 | Host         : PC-20180520MDXC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_timing_summary -max_paths 10 -file led_timing_summary_routed.rpt -rpx led_timing_summary_routed.rpx -warn_on_violation
 | Design       : led
@@ -128,7 +128,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-     -0.914      -17.163                     32                   32        0.228        0.000                      0                   32        0.345        0.000                       0                    38  
+     -0.914      -17.173                     32                   32        0.228        0.000                      0                   32        0.345        0.000                       0                    38  
 
 
 Timing constraints are not met.
@@ -154,7 +154,7 @@ MY_CLK_400M/inst/clk_in1  {0.000 5.000}        10.000          100.000
 Clock                         WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                         -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 MY_CLK_400M/inst/clk_in1                                                                                                                                                    3.000        0.000                       0                     1  
-  clk_out1_clk_wiz_0           -0.914      -17.163                     32                   32        0.228        0.000                      0                   32        0.345        0.000                       0                    34  
+  clk_out1_clk_wiz_0           -0.914      -17.173                     32                   32        0.228        0.000                      0                   32        0.345        0.000                       0                    34  
   clkfbout_clk_wiz_0                                                                                                                                                        7.845        0.000                       0                     3  
 
 
@@ -213,7 +213,7 @@ High Pulse Width  Fast    PLLE2_ADV/CLKIN1  n/a            2.000         5.000  
 From Clock:  clk_out1_clk_wiz_0
   To Clock:  clk_out1_clk_wiz_0
 
-Setup :           32  Failing Endpoints,  Worst Slack       -0.914ns,  Total Violation      -17.163ns
+Setup :           32  Failing Endpoints,  Worst Slack       -0.914ns,  Total Violation      -17.173ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.228ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        0.345ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------

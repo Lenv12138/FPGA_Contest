@@ -71,7 +71,7 @@ module led(
             if (locked == 1)                        //400M时钟已经稳定.
             begin 
                 counter <= counter+1;
-                if (counter == 30'd10)     //1s
+                if (counter == 30'd400_000_000)     //1s
                 begin
                     clk_1s <= 1'b1;
                     counter <= 0;
