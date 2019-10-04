@@ -448,3 +448,5 @@ dismissDialog("Program Device"); // bA (cj)
 // Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
 // 'I' command handler elapsed time: 3 seconds
 dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("led.v", 485, 312); // cd (w, cj)
