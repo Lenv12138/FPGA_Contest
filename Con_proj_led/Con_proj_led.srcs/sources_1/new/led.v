@@ -22,8 +22,8 @@
 
 module led(
     input CLK,
-    output reg [7:0] LED_L,
-    output reg [7:0] LED_H,
+    output reg [7:0] LED_L = 0,
+    output reg [7:0] LED_H = 0,
     input [15:0] sw
     );
 //三八译码器
@@ -59,7 +59,7 @@ module led(
     );      
     reg clk_1s = 0;                                 //400M to 1s
     reg [30:0] counter = 0;                         //400M计数器
-    always @(posedge CLK_400M,posedge reset)        //2.5ns触发一次
+    always @(posedge CLK_400M_BUFG,posedge reset)        //2.5ns触发一次
     begin 
         if (reset == 1)                             //复位
         begin
@@ -71,7 +71,7 @@ module led(
             if (locked == 1)                        //400M时钟已经稳定.
             begin 
                 counter <= counter+1;
-                if (counter == 30'd400_000_000)     //1s
+                if (counter == 30'd5)     //1s
                 begin
                     clk_1s <= 1'b1;
                     counter <= 0;
@@ -100,4 +100,13 @@ module led(
             LED_H <= 8'b01 << count_1s; 
         end
     end
+    
+//测试BUFG原语,好像没有用
+    wire CLK_400M_BUFG;
+    BUFG init_clk_bufg
+    (
+        .I (CLK_400M),
+        .O (CLK_400M_BUFG)
+    );
+
 endmodule

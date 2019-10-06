@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Oct  4 10:35:49 2019
-# Process ID: 7748
+# Start of session at: Fri Oct  4 22:53:31 2019
+# Process ID: 17144
 # Current directory: F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1
 # Command line: vivado.exe -log led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led.tcl
 # Log file: F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/led.vds
@@ -15,19 +15,21 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6168 
+INFO: Helper process launched with PID 16652 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 349.219 ; gain = 94.852
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 349.305 ; gain = 95.074
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'led' [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:32]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [E:/vivado.2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [E:/vivado.2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
 WARNING: [Synth 8-5788] Register clk_1s_reg in module led is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:67]
 WARNING: [Synth 8-3848] Net reset in module/entity led does not have driver. [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:48]
-INFO: [Synth 8-256] done synthesizing module 'led' (2#1) [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:23]
+INFO: [Synth 8-256] done synthesizing module 'led' (3#1) [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 399.629 ; gain = 145.262
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 399.508 ; gain = 145.277
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,15 +39,15 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 399.629 ; gain = 145.262
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 399.508 ; gain = 145.277
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'MY_CLK_400M'
-Finished Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'MY_CLK_400M'
+Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'MY_CLK_400M'
+Finished Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'MY_CLK_400M'
 Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/constrs_1/new/led.xdc]
 Finished Parsing XDC File [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/constrs_1/new/led.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/constrs_1/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/led_propImpl.xdc].
@@ -55,32 +57,32 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.356 . Memory (MB): peak = 725.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 719.082 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 725.652 ; gain = 471.285
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 719.082 ; gain = 464.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:01:04 . Memory (MB): peak = 725.652 ; gain = 471.285
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 719.082 ; gain = 464.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-7748-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/.Xil/Vivado-17144-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for MY_CLK_400M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:06 . Memory (MB): peak = 725.652 ; gain = 471.285
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 719.082 ; gain = 464.852
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "LED_L" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "clk_1s" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "clk_1s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "LED_H" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:01:11 . Memory (MB): peak = 725.652 ; gain = 471.285
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 719.082 ; gain = 464.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -145,7 +147,7 @@ Start Cross Boundary and Area Optimization
 INFO: [Synth 8-5545] ROM "clk_1s" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "LED_H" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:24 . Memory (MB): peak = 725.652 ; gain = 471.285
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 719.082 ; gain = 464.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,13 +161,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'MY_CLK_400M/clk_out1' to pin 'MY_CLK_400M/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:57 . Memory (MB): peak = 729.711 ; gain = 475.344
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 726.480 ; gain = 472.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:58 . Memory (MB): peak = 751.832 ; gain = 497.465
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 748.316 ; gain = 494.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -177,7 +179,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:59 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -201,7 +203,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -214,7 +216,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -226,25 +228,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -262,29 +264,30 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
-|2     |CARRY4    |     8|
-|3     |LUT2      |     1|
-|4     |LUT3      |    10|
-|5     |LUT4      |     7|
-|6     |LUT5      |    46|
-|7     |LUT6      |     5|
-|8     |FDRE      |    56|
-|9     |IBUF      |    16|
-|10    |OBUF      |    16|
+|2     |BUFG      |     1|
+|3     |CARRY4    |     8|
+|4     |LUT2      |     1|
+|5     |LUT3      |    10|
+|6     |LUT4      |     7|
+|7     |LUT5      |    46|
+|8     |LUT6      |     5|
+|9     |FDRE      |    56|
+|10    |IBUF      |    16|
+|11    |OBUF      |    16|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   167|
+|1     |top      |       |   168|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:29 . Memory (MB): peak = 753.109 ; gain = 172.719
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:02:01 . Memory (MB): peak = 753.109 ; gain = 498.742
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 749.629 ; gain = 175.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 749.629 ; gain = 495.398
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -295,10 +298,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:02:12 . Memory (MB): peak = 753.109 ; gain = 510.586
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 749.629 ; gain = 507.051
 INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Contest/Con_proj_led/Con_proj_led.runs/synth_1/led.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file led_utilization_synth.rpt -pb led_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.625 . Memory (MB): peak = 753.109 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Oct  4 10:38:21 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 749.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  4 22:54:49 2019...

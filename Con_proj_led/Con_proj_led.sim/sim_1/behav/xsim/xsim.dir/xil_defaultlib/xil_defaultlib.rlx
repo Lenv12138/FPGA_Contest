@@ -3,7 +3,7 @@
 Dec 15 2017
 21:07:18
 F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v,1570113229,verilog,,,,led_tb,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v,1570202683,verilog,,,,led_tb,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,
 F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1570089390,verilog,,F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v,,clk_wiz_0,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,
 F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1570089389,verilog,,F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,
-F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v,1570116607,verilog,,F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v,,led,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,
+F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sources_1/new/led.v,1570202873,verilog,,F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v,,led,,,../../../../Con_proj_led.srcs/sources_1/ip/CLK_400MHZ;../../../../Con_proj_led.srcs/sources_1/ip/clk_wiz_0,,,,,

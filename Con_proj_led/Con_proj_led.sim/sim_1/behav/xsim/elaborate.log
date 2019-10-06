@@ -15,3 +15,4 @@ Compiling module xil_defaultlib.clk_wiz_0
 Compiling module xil_defaultlib.led
 Compiling module xil_defaultlib.led_tb
 Compiling module xil_defaultlib.glbl
+Built simulation snapshot led_tb_behav

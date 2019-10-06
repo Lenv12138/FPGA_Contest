@@ -2,11 +2,11 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Oct  3 16:27:53 2019
-# Process ID: 7408
-# Current directory: F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/xsim.dir/led_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Fri Oct  4 22:39:23 2019
+# Process ID: 11636
+# Current directory: F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/xsim.dir/led_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/xsim.dir/led_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/FPGA_Contest/Con_proj_led/Con_proj_led.sim/sim_1/behav/xsim/xsim.dir/led_tb_behav/webtalk/xsim_webtalk.tcl -notrace

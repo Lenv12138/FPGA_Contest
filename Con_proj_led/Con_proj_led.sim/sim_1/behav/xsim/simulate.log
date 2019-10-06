@@ -571,4 +571,4 @@ Time resolution is 1 ps
                  996  CLK_400M:0,LOCKED:1,CLK:1
                  998  CLK_400M:1,LOCKED:1,CLK:1
                  999  CLK_400M:0,LOCKED:1,CLK:1
-$finish called at time : 1 us : File "F:/FPGA_Contest_Proj/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v" Line 80
+$finish called at time : 1 us : File "F:/FPGA_Contest/Con_proj_led/Con_proj_led.srcs/sim_1/new/led_tb.v" Line 80

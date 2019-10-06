@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pps_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="pps_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="441290000fs"></ZoomStartTime>
+      <ZoomEndTime time="1070290001fs"></ZoomEndTime>
+      <Cursor1Time time="667740000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="330"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/pps_tb/pps_out" type="logic">
+      <obj_property name="ElementShortName">pps_out</obj_property>
+      <obj_property name="ObjectShortName">pps_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/sw_r" type="logic">
+      <obj_property name="ElementShortName">sw_r</obj_property>
+      <obj_property name="ObjectShortName">sw_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/clk_400M" type="logic">
+      <obj_property name="ElementShortName">clk_400M</obj_property>
+      <obj_property name="ObjectShortName">clk_400M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_modified" type="logic">
+      <obj_property name="ElementShortName">pps_modified</obj_property>
+      <obj_property name="ObjectShortName">pps_modified</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/period" type="array">
+      <obj_property name="ElementShortName">period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt_H" type="array">
+      <obj_property name="ElementShortName">cnt_H[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_H[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt_L" type="array">
+      <obj_property name="ElementShortName">cnt_L[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_L[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt_T" type="array">
+      <obj_property name="ElementShortName">cnt_T[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_T[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/present_pos" type="array">
+      <obj_property name="ElementShortName">present_pos[1:0]</obj_property>
+      <obj_property name="ObjectShortName">present_pos[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/next_pos" type="array">
+      <obj_property name="ElementShortName">next_pos[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_pos[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

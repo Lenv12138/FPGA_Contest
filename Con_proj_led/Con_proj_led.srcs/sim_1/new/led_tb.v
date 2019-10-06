@@ -24,7 +24,7 @@ module led_tb();
     reg  [15:0] sw;             //改变的输入的变量
     wire [7:0] LED_L, LED_H;
     reg CLK=0;
-    reg [7:0] counter = 0;
+    reg [7:0] counter=0;
 //调用LED.v
     led My_test
     (                   //调用前面写好的led模块
