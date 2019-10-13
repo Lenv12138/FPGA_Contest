@@ -1,0 +1,151 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 3892
+License: Customer
+
+Current time: 	Sun Oct 13 22:20:11 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 2
+Available disk space: 43 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/vivado.2017/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	E:/vivado.2017/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: F:/FPGA_Contest/PPS
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/vivado.2017/Vivado
+HDI_APPROOT: E:/vivado.2017/Vivado/2017.4
+RDI_DATADIR: E:/vivado.2017/Vivado/2017.4/data
+RDI_BINDIR: E:/vivado.2017/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	E:/vivado.2017/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/FPGA_Contest/PPS/vivado.log
+Vivado journal file location: 	F:/FPGA_Contest/PPS/vivado.jou
+Engine tmp dir: 	F:/FPGA_Contest/PPS/.Xil/Vivado-3892-PC-20180520MDXC
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 490 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 47 MB (+46372kb) [00:00:22]
+// [Engine Memory]: 454 MB (+325077kb) [00:00:22]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: F:\FPGA_Contest\PPS\PPS.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 60 MB (+11507kb) [00:00:25]
+// [Engine Memory]: 487 MB (+10613kb) [00:00:25]
+// Tcl Message: open_project F:/FPGA_Contest/PPS/PPS.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 38 MB. Current time: 10/13/19 10:20:14 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 520 MB (+9050kb) [00:00:35]
+// [GUI Memory]: 65 MB (+2512kb) [00:00:40]
+// Tcl Message: open_project F:/FPGA_Contest/PPS/PPS.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado.2017/Vivado/2017.4/data/ip'. 
+// [Engine Memory]: 549 MB (+3030kb) [00:00:43]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 741.078 ; gain = 42.059 
+// Project name: PPS; location: F:/FPGA_Contest/PPS; part: xc7a35tcpg236-1
+// [GUI Memory]: 70 MB (+1030kb) [00:00:44]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pps_out2 (pps_out2.v)]", 1); // B (D, cj)
+// PAPropertyPanels.initPanels (pps_adjust_phase.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pps_out2 (pps_out2.v), pps_adjust : pps_adjust_phase (pps_adjust_phase.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pps_out2 (pps_out2.v), pps_adjust : pps_adjust_phase (pps_adjust_phase.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("pps_adjust_phase.v", 387, 368); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 44 MB. Current time: 10/13/19 10:20:44 PM CST
+selectCodeEditor("pps_adjust_phase.v", 264, 308); // cd (w, cj)
+typeControlKey((HResource) null, "pps_adjust_phase.v", 'c'); // cd (w, cj)
+// [Engine Memory]: 578 MB (+821kb) [00:01:09]
+// Elapsed time: 56 seconds
+selectCodeEditor("pps_adjust_phase.v", 205, 152); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("pps_adjust_phase.v", 218, 206); // cd (w, cj)
+// [GUI Memory]: 75 MB (+1467kb) [00:02:39]
+// [GUI Memory]: 79 MB (+585kb) [00:03:57]
+// [GUI Memory]: 83 MB (+527kb) [00:10:29]
+// [GUI Memory]: 89 MB (+1719kb) [00:17:39]
+// Elapsed time: 1212 seconds
+selectCodeEditor("pps_adjust_phase.v", 329, 304); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("pps_adjust_phase.v", 381, 364); // cd (w, cj)
+// Elapsed time: 63 seconds
+selectCodeEditor("pps_adjust_phase.v", 235, 376); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("pps_adjust_phase.v", 293, 390); // cd (w, cj)
+// Elapsed time: 23 seconds
+selectCodeEditor("pps_adjust_phase.v", 764, 222); // cd (w, cj)
+// [GUI Memory]: 94 MB (+14kb) [00:24:41]
+// Elapsed time: 46 seconds
+selectCodeEditor("pps_adjust_phase.v", 572, 256); // cd (w, cj)
+// Elapsed time: 45 seconds
+selectCodeEditor("pps_adjust_phase.v", 174, 311); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("pps_adjust_phase.v", 216, 394); // cd (w, cj)
+// Elapsed time: 84 seconds
+selectCodeEditor("pps_adjust_phase.v", 473, 336); // cd (w, cj)
+// Elapsed time: 27 seconds
+selectCodeEditor("pps_adjust_phase.v", 345, 295); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 44 MB. Current time: 10/13/19 10:50:45 PM CST
+// Elapsed time: 470 seconds
+selectCodeEditor("pps_adjust_phase.v", 481, 227); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("pps_adjust_phase.v", 388, 311); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 388, 311, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 89 seconds
+selectCodeEditor("pps_adjust_phase.v", 203, 321); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 156, 186); // cd (w, cj)
+typeControlKey((HResource) null, "pps_adjust_phase.v", 'c'); // cd (w, cj)
+// [GUI Memory]: 100 MB (+1748kb) [00:38:04]
+// Elapsed time: 25 seconds
+selectCodeEditor("pps_adjust_phase.v", 255, 108); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 93, 82); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 148, 376); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 133, 346); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 142, 361); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 142, 361, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("pps_adjust_phase.v", 251, 435); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 152, 361); // cd (w, cj)
+typeControlKey((HResource) null, "pps_adjust_phase.v", 'c'); // cd (w, cj)
+// Elapsed time: 129 seconds
+selectCodeEditor("pps_adjust_phase.v", 213, 36); // cd (w, cj)
+selectCodeEditor("pps_adjust_phase.v", 303, 149); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 41 MB. Current time: 10/13/19 11:20:45 PM CST
+// Elapsed time: 1792 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aF (Q, cj)

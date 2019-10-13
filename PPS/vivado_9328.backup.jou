@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 10 22:01:22 2019
+# Process ID: 9328
+# Current directory: F:/FPGA_Contest/PPS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8768 F:\FPGA_Contest\PPS\PPS.xpr
+# Log file: F:/FPGA_Contest/PPS/vivado.log
+# Journal file: F:/FPGA_Contest/PPS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_Contest/PPS/PPS.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source pps_tb.tcl
+close_sim
+launch_simulation
+source pps_tb.tcl
+close_sim
+launch_simulation
+source pps_tb.tcl
+run 1000 ms
+add_wave {{/pps_tb/pps_adjust_test/T_length}} 
+add_wave {{/pps_tb/pps_adjust_test/H_length}} 
+restart
+run 1000 ms
+close_sim
+launch_simulation
+source pps_tb.tcl
+close_sim

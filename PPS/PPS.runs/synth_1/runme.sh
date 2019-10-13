@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1'
+HD_PWD='F:/FPGA_Contest/PPS/PPS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

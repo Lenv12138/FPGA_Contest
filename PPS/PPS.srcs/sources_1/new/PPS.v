@@ -25,7 +25,7 @@ module PPS_out_1hz(
     input sw_r,
     output reg pps_out = 0          //·ÂÕæ³õÊ¼»¯
     );
-    parameter period = 100_000_000;
+    parameter period = 10;
     reg [25:0] counter = 0;
     reg clk_1s = 0;
     always @(posedge CLK,posedge sw_r)

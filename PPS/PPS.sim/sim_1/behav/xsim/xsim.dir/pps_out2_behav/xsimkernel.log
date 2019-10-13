@@ -1,0 +1,7 @@
+Running: xsim.dir/pps_out2_behav/xsimk.exe -simmode gui -wdb pps_out2_behav.wdb -simrunnum 0 -socket 54718
+Design successfully loaded
+Design Loading Memory Usage: 6704 KB (Peak: 6704 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7796 KB (Peak: 7796 KB)
+Simulation CPU Usage: 46 ms

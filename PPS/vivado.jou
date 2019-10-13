@@ -2,37 +2,13 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Oct  5 23:37:17 2019
-# Process ID: 15676
-# Current directory: F:/FPGA_Contest_Proj/PPS
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9148 F:\FPGA_Contest_Proj\PPS\PPS.xpr
-# Log file: F:/FPGA_Contest_Proj/PPS/vivado.log
-# Journal file: F:/FPGA_Contest_Proj/PPS\vivado.jou
+# Start of session at: Sun Oct 13 22:19:18 2019
+# Process ID: 3892
+# Current directory: F:/FPGA_Contest/PPS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7056 F:\FPGA_Contest\PPS\PPS.xpr
+# Log file: F:/FPGA_Contest/PPS/vivado.log
+# Journal file: F:/FPGA_Contest/PPS\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project F:/FPGA_Contest_Proj/PPS/PPS.xpr
+open_project F:/FPGA_Contest/PPS/PPS.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source pps_tb.tcl
-add_wave {{/pps_tb/pps_adjust_test/cnt_H}} 
-add_wave {{/pps_tb/pps_adjust_test/cnt_L}} 
-add_wave {{/pps_tb/pps_adjust_test/cnt_T}} 
-run 1000 ms
-add_bp {F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v} 70
-run all
-close_sim
-launch_simulation
-source pps_tb.tcl
-add_wave {{/pps_tb/pps_adjust_test/cnt_H}} 
-add_wave {{/pps_tb/pps_adjust_test/cnt_T}} 
-add_wave {{/pps_tb/pps_adjust_test/cnt_L}} 
-add_wave {{/pps_tb/pps_adjust_test/present_pos}} 
-add_wave {{/pps_tb/pps_adjust_test/next_pos}} 
-run 1000 ms
-restart
-run 1000 ms
-relaunch_sim
-save_wave_config {F:/FPGA_Contest_Proj/PPS/pps_tb_behav1.wcfg}
-relaunch_sim
-save_wave_config {F:/FPGA_Contest_Proj/PPS/pps_tb_behav1.wcfg}
-close_sim

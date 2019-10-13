@@ -14,30 +14,30 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2020 
+INFO: Helper process launched with PID 5256 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 351.254 ; gain = 97.387
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 349.582 ; gain = 95.824
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'pps_out2' [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_out2.v:23]
-INFO: [Synth 8-638] synthesizing module 'PPS_out_1hz' [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/PPS.v:23]
-	Parameter period bound to: 100000000 - type: integer 
-WARNING: [Synth 8-5788] Register clk_1s_reg in module PPS_out_1hz is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/PPS.v:38]
-INFO: [Synth 8-256] done synthesizing module 'PPS_out_1hz' (1#1) [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/PPS.v:23]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'pps_adjust_phase' [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:24]
+INFO: [Synth 8-638] synthesizing module 'pps_out2' [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_out2.v:23]
+INFO: [Synth 8-638] synthesizing module 'PPS_out_1hz' [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/PPS.v:23]
+	Parameter period bound to: 10 - type: integer 
+WARNING: [Synth 8-5788] Register clk_1s_reg in module PPS_out_1hz is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/PPS.v:38]
+INFO: [Synth 8-256] done synthesizing module 'PPS_out_1hz' (1#1) [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/PPS.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'pps_adjust_phase' [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:4]
 	Parameter NP_NN bound to: 2'b00 
 	Parameter YP_NN bound to: 2'b01 
 	Parameter NP_YN bound to: 2'b10 
 	Parameter YP_YN bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:55]
-INFO: [Synth 8-226] default block is never used [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:93]
-WARNING: [Synth 8-6014] Unused sequential element cnt_T_reg was removed.  [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:96]
-INFO: [Synth 8-256] done synthesizing module 'pps_adjust_phase' (3#1) [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:24]
-INFO: [Synth 8-256] done synthesizing module 'pps_out2' (4#1) [F:/FPGA_Contest_Proj/PPS/PPS.srcs/sources_1/new/pps_out2.v:23]
+INFO: [Synth 8-226] default block is never used [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:31]
+INFO: [Synth 8-226] default block is never used [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:74]
+WARNING: [Synth 8-6014] Unused sequential element cnt_L_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:79]
+INFO: [Synth 8-256] done synthesizing module 'pps_adjust_phase' (3#1) [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:4]
+INFO: [Synth 8-256] done synthesizing module 'pps_out2' (4#1) [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_out2.v:23]
 WARNING: [Synth 8-3331] design pps_adjust_phase has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 402.805 ; gain = 148.938
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 399.504 ; gain = 145.746
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,47 +47,50 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 402.805 ; gain = 148.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 399.504 ; gain = 145.746
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'CLK_400_out'
-Finished Parsing XDC File [F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'CLK_400_out'
-Parsing XDC File [F:/FPGA_Contest_Proj/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]
-Finished Parsing XDC File [F:/FPGA_Contest_Proj/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA_Contest_Proj/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pps_out2_propImpl.xdc].
+Parsing XDC File [F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'CLK_400_out'
+Finished Parsing XDC File [F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc] for cell 'CLK_400_out'
+Parsing XDC File [F:/FPGA_Contest/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]
+Finished Parsing XDC File [F:/FPGA_Contest/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA_Contest/PPS/PPS.srcs/constrs_1/new/pps_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pps_out2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/pps_out2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 737.602 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 730.328 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 730.328 ; gain = 476.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 730.328 ; gain = 476.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/.Xil/Vivado-6824-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  F:/FPGA_Contest/PPS/PPS.runs/synth_1/.Xil/Vivado-5324-PC-20180520MDXC/dcp1/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for CLK_400_out. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 730.328 ; gain = 476.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_1s" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element index_H_cnt_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:144]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:165]
+WARNING: [Synth 8-6014] Unused sequential element out_index_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:163]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 730.328 ; gain = 476.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -102,17 +105,23 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     31 Bit       Adders := 2     
 	   2 Input     26 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
 +---Registers : 
 	               31 Bit    Registers := 2     
 	               26 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              124 Bit         RAMs := 2     
 +---Muxes : 
-	   4 Input     31 Bit        Muxes := 2     
+	   4 Input     31 Bit        Muxes := 4     
 	   2 Input     26 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -134,15 +143,21 @@ Module pps_adjust_phase
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     31 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
 +---Registers : 
 	               31 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              124 Bit         RAMs := 2     
 +---Muxes : 
-	   4 Input     31 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 3     
+	   4 Input     31 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -159,8 +174,47 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "pps_1hz/clk_1s" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element pps_adjust/index_H_cnt_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:144]
+WARNING: [Synth 8-6014] Unused sequential element pps_adjust/cnt_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:165]
+WARNING: [Synth 8-6014] Unused sequential element pps_adjust/out_index_reg was removed.  [F:/FPGA_Contest/PPS/PPS.srcs/sources_1/new/pps_adjust_phase.v:163]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pps_adjust/index_T_cnt_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[9]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[8]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[7]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[6]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[5]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[4]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[3]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[2]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[1]) is unused and will be removed from module pps_out2.
+WARNING: [Synth 8-3332] Sequential element (pps_adjust/index_T_cnt_reg[0]) is unused and will be removed from module pps_out2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 730.328 ; gain = 476.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------------+-----------+----------------------+--------------+
+|pps_out2    | pps_adjust/memory_H_reg | Implied   | 4 x 31               | RAM32M x 6   | 
+|pps_out2    | pps_adjust/memory_T_reg | Implied   | 4 x 31               | RAM32M x 6   | 
++------------+-------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -174,13 +228,28 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_400_out/clk_400M' to pin 'CLK_400_out/bbstub_clk_400M/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:03 . Memory (MB): peak = 737.602 ; gain = 483.734
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 737.355 ; gain = 483.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:03 . Memory (MB): peak = 757.637 ; gain = 503.770
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 749.777 ; gain = 496.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------------+-----------+----------------------+--------------+
+|pps_out2    | pps_adjust/memory_H_reg | Implied   | 4 x 31               | RAM32M x 6   | 
+|pps_out2    | pps_adjust/memory_T_reg | Implied   | 4 x 31               | RAM32M x 6   | 
++------------+-------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,7 +261,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,7 +285,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,7 +298,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,25 +310,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -277,48 +346,50 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
-|2     |CARRY4    |    23|
-|3     |LUT1      |     3|
-|4     |LUT2      |     3|
-|5     |LUT3      |    25|
-|6     |LUT4      |     6|
-|7     |LUT5      |     3|
-|8     |LUT6      |    13|
-|9     |FDCE      |    26|
-|10    |FDRE      |    68|
-|11    |FDSE      |     1|
-|12    |IBUF      |     1|
-|13    |OBUF      |     2|
+|2     |CARRY4    |    47|
+|3     |LUT1      |     7|
+|4     |LUT2      |   134|
+|5     |LUT3      |     7|
+|6     |LUT4      |   145|
+|7     |LUT5      |    10|
+|8     |LUT6      |    12|
+|9     |RAM32M    |    12|
+|10    |FDCE      |    26|
+|11    |FDRE      |   181|
+|12    |FDSE      |     1|
+|13    |IBUF      |     1|
+|14    |OBUF      |     2|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-------------+-----------------+------+
 |      |Instance     |Module           |Cells |
 +------+-------------+-----------------+------+
-|1     |top          |                 |   176|
+|1     |top          |                 |   587|
 |2     |  pps_1hz    |PPS_out_1hz      |    70|
-|3     |  pps_adjust |pps_adjust_phase |   101|
+|3     |  pps_adjust |pps_adjust_phase |   512|
 +------+-------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 758.914 ; gain = 505.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 758.914 ; gain = 170.250
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 758.914 ; gain = 505.047
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 760.832 ; gain = 176.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 760.832 ; gain = 507.074
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+37 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:16 . Memory (MB): peak = 758.914 ; gain = 516.891
-INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Contest_Proj/PPS/PPS.runs/synth_1/pps_out2.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 760.832 ; gain = 518.730
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Contest/PPS/PPS.runs/synth_1/pps_out2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file pps_out2_utilization_synth.rpt -pb pps_out2_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.270 . Memory (MB): peak = 758.914 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Oct  6 11:37:40 2019...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.040 . Memory (MB): peak = 760.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 13 16:42:02 2019...
