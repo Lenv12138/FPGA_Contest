@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pps_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="pps_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1477000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1960000001fs"></ZoomEndTime>
+      <Cursor1Time time="1670000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="274"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wave_markers>
+      <marker time="55970000000" label="" />
+      <marker time="505000000" label="" />
+      <marker time="1610000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/pps_tb/pps_out" type="logic">
+      <obj_property name="ElementShortName">pps_out</obj_property>
+      <obj_property name="ObjectShortName">pps_out</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/clk_400M" type="logic">
+      <obj_property name="ElementShortName">clk_400M</obj_property>
+      <obj_property name="ObjectShortName">clk_400M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_modified" type="logic">
+      <obj_property name="ElementShortName">pps_modified</obj_property>
+      <obj_property name="ObjectShortName">pps_modified</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/present_pos" type="array">
+      <obj_property name="ElementShortName">present_pos[1:0]</obj_property>
+      <obj_property name="ObjectShortName">present_pos[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/next_pos" type="array">
+      <obj_property name="ElementShortName">next_pos[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_pos[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/flag_T_w" type="logic">
+      <obj_property name="ElementShortName">flag_T_w</obj_property>
+      <obj_property name="ObjectShortName">flag_T_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/flag_H_w" type="logic">
+      <obj_property name="ElementShortName">flag_H_w</obj_property>
+      <obj_property name="ObjectShortName">flag_H_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/memory_H" type="array">
+      <obj_property name="ElementShortName">memory_H[3:0][30:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_H[3:0][30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/memory_T" type="array">
+      <obj_property name="ElementShortName">memory_T[3:0][30:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_T[3:0][30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/out_index" type="array">
+      <obj_property name="ElementShortName">out_index[9:0]</obj_property>
+      <obj_property name="ObjectShortName">out_index[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/index_H_cnt" type="array">
+      <obj_property name="ElementShortName">index_H_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">index_H_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/index_T_cnt" type="array">
+      <obj_property name="ElementShortName">index_T_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">index_T_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider226">
+      <obj_property name="label">T and H</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt_H" type="array">
+      <obj_property name="ElementShortName">cnt_H[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_H[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/cnt_T" type="array">
+      <obj_property name="ElementShortName">cnt_T[30:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_T[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/H_buff" type="array">
+      <obj_property name="ElementShortName">H_buff[30:0]</obj_property>
+      <obj_property name="ObjectShortName">H_buff[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_adjust_test/T_buff" type="array">
+      <obj_property name="ElementShortName">T_buff[30:0]</obj_property>
+      <obj_property name="ObjectShortName">T_buff[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pps_tb/pps_test/clk_1s" type="logic">
+      <obj_property name="ElementShortName">clk_1s</obj_property>
+      <obj_property name="ObjectShortName">clk_1s</obj_property>
+   </wvobject>
+</wave_config>

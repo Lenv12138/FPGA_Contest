@@ -1,0 +1,87 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 9512
+License: Customer
+
+Current time: 	Sun Oct 13 23:32:52 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 2
+Available disk space: 43 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/vivado.2017/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	E:/vivado.2017/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: F:/FPGA_Contest/PPS_que
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/vivado.2017/Vivado
+HDI_APPROOT: E:/vivado.2017/Vivado/2017.4
+RDI_DATADIR: E:/vivado.2017/Vivado/2017.4/data
+RDI_BINDIR: E:/vivado.2017/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	E:/vivado.2017/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/FPGA_Contest/PPS_que/vivado.log
+Vivado journal file location: 	F:/FPGA_Contest/PPS_que/vivado.jou
+Engine tmp dir: 	F:/FPGA_Contest/PPS_que/.Xil/Vivado-9512-PC-20180520MDXC
+
+GUI allocated memory:	165 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 463 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 47 MB (+46547kb) [00:00:29]
+// [Engine Memory]: 451 MB (+321403kb) [00:00:29]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: F:\FPGA_Contest\PPS_que\PPS.xpr. Version: Vivado v2017.4 
+// [GUI Memory]: 58 MB (+9549kb) [00:00:35]
+// Tcl Message: open_project F:/FPGA_Contest/PPS_que/PPS.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 502 MB. GUI used memory: 36 MB. Current time: 10/13/19 11:32:54 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 512 MB (+40776kb) [00:00:39]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 546 MB (+8054kb) [00:00:58]
+// [GUI Memory]: 64 MB (+2923kb) [00:00:58]
+// Tcl Message: open_project F:/FPGA_Contest/PPS_que/PPS.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado.2017/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 547 MB. GUI used memory: 42 MB. Current time: 10/13/19 11:33:19 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 721.453 ; gain = 61.398 
+// Project name: PPS; location: F:/FPGA_Contest/PPS_que; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 68 MB (+546kb) [00:01:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 42 MB. Current time: 10/13/19 11:34:15 PM CST

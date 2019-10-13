@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 13 12:00:57 2019
+# Process ID: 6476
+# Current directory: F:/FPGA_Contest/PPS_que
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6564 F:\FPGA_Contest\PPS_que\PPS.xpr
+# Log file: F:/FPGA_Contest/PPS_que/vivado.log
+# Journal file: F:/FPGA_Contest/PPS_que\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_Contest/PPS_que/PPS.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FPGA_Contest/PPS' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado.2017/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 742.504 ; gain = 50.023
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 12:01:54 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 12:08:16 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 12:14:42 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado.2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pps_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pps_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/PPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPS_out_1hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/pps_adjust_phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_adjust_phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado.2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 9bf323d97ce64b3c87a7e4739716b800 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pps_tb_behav xil_defaultlib.pps_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PPS_out_1hz
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pps_adjust_phase
+Compiling module xil_defaultlib.pps_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pps_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 775.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pps_tb_behav -key {Behavioral:sim_1:Functional:pps_tb} -tclbatch {pps_tb.tcl} -view {F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg
+source pps_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 795.508 ; gain = 19.672
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pps_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 795.508 ; gain = 19.672
+run 1000 ms
+$finish called at time : 60 us : File "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" Line 71
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado.2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pps_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pps_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/PPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPS_out_1hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/pps_adjust_phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_adjust_phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado.2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 9bf323d97ce64b3c87a7e4739716b800 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pps_tb_behav xil_defaultlib.pps_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PPS_out_1hz
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pps_adjust_phase
+Compiling module xil_defaultlib.pps_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pps_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 830.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pps_tb_behav -key {Behavioral:sim_1:Functional:pps_tb} -tclbatch {pps_tb.tcl} -view {F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg
+source pps_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pps_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 830.902 ; gain = 0.000
+run 1000 ms
+$finish called at time : 60 us : File "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" Line 71
+add_wave {{/pps_tb/pps_test/clk_1s}} 
+save_wave_config {F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado.2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pps_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pps_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/PPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPS_out_1hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sources_1/new/pps_adjust_phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_adjust_phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pps_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado.2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 9bf323d97ce64b3c87a7e4739716b800 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pps_tb_behav xil_defaultlib.pps_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PPS_out_1hz
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.pps_adjust_phase
+Compiling module xil_defaultlib.pps_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pps_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 838.586 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/FPGA_Contest/PPS_que/PPS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pps_tb_behav -key {Behavioral:sim_1:Functional:pps_tb} -tclbatch {pps_tb.tcl} -view {F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg
+source pps_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pps_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 838.586 ; gain = 0.000
+run 1000 ms
+$finish called at time : 60 us : File "F:/FPGA_Contest/PPS_que/PPS.srcs/sim_1/new/pps_tb.v" Line 71
+save_wave_config {F:/FPGA_Contest/PPS_que/pps_yes_behav2.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 12:42:55 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 12:47:06 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 13:30:22 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 13:31:15 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 13:32:26 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FPGA_Contest/PPS_que/PPS.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Oct 13 13:33:57 2019] Launched synth_1...
+Run output will be captured here: F:/FPGA_Contest/PPS_que/PPS.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 13 13:38:05 2019...

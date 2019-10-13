@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570956517">
+  <File Type="PWROPT-DCP" Name="pps_out2_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="pps_out2_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="pps_out2.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="pps_out2_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="pps_out2_reports.tcl"/>
+  <File Type="BG-DRC" Name="pps_out2.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pps_out2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="pps_out2_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="pps_out2.hwdef"/>
+  <File Type="OPT-DCP" Name="pps_out2_opt.dcp"/>
+  <File Type="OPT-DRC" Name="pps_out2_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="pps_out2_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pps_out2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="pps_out2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="pps_out2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="pps_out2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pps_out2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="pps_out2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pps_out2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="pps_out2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pps_out2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pps_out2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="pps_out2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pps_out2_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pps_out2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pps_out2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pps_out2_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="pps_out2.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="pps_out2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pps_out2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="pps_out2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pps_out2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="pps_out2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pps_out2_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="pps_out2.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="pps_out2_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="pps_out2.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pps_out2_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="pps_out2.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pps_out2_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="pps_out2.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pps_out2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="pps_out2_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="pps_out2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pps_out2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pps_out2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pps_out2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pps_out2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="pps_out2_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="pps_out2.vdi"/>
+  <File Type="ROUTE-CLK" Name="pps_out2_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pps_out2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pps_out2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pps_out2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pps_out2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pps_out2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="pps_out2.nky"/>
+  <File Type="BITSTR-BMM" Name="pps_out2_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="pps_out2.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="pps_out2.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="pps_out2.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PPS.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pps_adjust_phase.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pps_out2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pps_out2"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pps_xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

@@ -1,0 +1,1203 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Oct 13 16:50:47 2019
+| Host         : PC-20180520MDXC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file pps_out2_methodology_drc_routed.rpt -pb pps_out2_methodology_drc_routed.pb -rpx pps_out2_methodology_drc_routed.rpx
+| Design       : pps_out2
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 233
++-----------+----------+------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                      | Violations |
++-----------+----------+------------------------------------------------------------------+------------+
+| CKLD-2    | Warning  | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| TIMING-16 | Warning  | Large setup violation                                            | 97         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                                      | 134        |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin                        | 1          |
++-----------+----------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net CLK_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): CLK_IBUF_inst/O
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.013 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[26]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.014 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[16]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.023 ns between pps_adjust/cnt_H_reg[4]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[24]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.049 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[14]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.051 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[18]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.073 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[29]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.082 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[27]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.108 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[30]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.109 ns between pps_adjust/cnt_H_reg[4]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[21]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.144 ns between pps_adjust/cnt_H_reg[4]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[10]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.151 ns between pps_adjust/cnt_H_reg[4]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[28]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.152 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[23]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.170 ns between pps_adjust/cnt_H_reg[10]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_H_reg[17]/D (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[2]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[3]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[4]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[5]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[6]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -3.370 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[7]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -3.657 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[8]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -3.657 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[9]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -3.701 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/pps_adjust_out_reg/S (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -3.709 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[8]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -3.709 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[9]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[2]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[3]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[4]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[5]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[6]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -3.805 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[7]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -3.842 ns between pps_adjust/out_index_reg[1]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[0]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -3.858 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[1]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -3.907 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[28]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -3.907 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[29]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -3.907 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[30]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -3.961 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[16]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -3.961 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[17]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -3.961 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[18]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -3.961 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[19]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -3.981 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[12]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -3.981 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[13]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -3.981 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[14]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -3.981 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[15]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -3.983 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[10]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -3.983 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[11]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -3.983 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[8]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -3.983 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[9]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -3.988 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[20]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -3.988 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[21]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -3.988 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[22]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -3.988 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[23]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -4.018 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[0]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -4.018 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[1]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -4.018 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[2]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -4.018 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[3]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -4.026 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[4]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -4.026 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[5]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -4.026 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[6]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -4.026 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[7]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -4.053 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[24]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -4.053 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[25]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -4.053 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[26]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -4.053 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[27]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -4.112 ns between pps_adjust/out_index_reg[1]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[0]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#65 Warning
+Large setup violation  
+There is a large setup violation of -4.276 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/out_index_reg[1]/R (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#66 Warning
+Large setup violation  
+There is a large setup violation of -4.343 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/pps_adjust_out_reg/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#67 Warning
+Large setup violation  
+There is a large setup violation of -4.509 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[24]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#68 Warning
+Large setup violation  
+There is a large setup violation of -4.509 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[25]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#69 Warning
+Large setup violation  
+There is a large setup violation of -4.509 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[26]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#70 Warning
+Large setup violation  
+There is a large setup violation of -4.509 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[27]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#71 Warning
+Large setup violation  
+There is a large setup violation of -4.648 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[20]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#72 Warning
+Large setup violation  
+There is a large setup violation of -4.648 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[21]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#73 Warning
+Large setup violation  
+There is a large setup violation of -4.648 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[22]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#74 Warning
+Large setup violation  
+There is a large setup violation of -4.648 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[23]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#75 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[16]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#76 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[17]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#77 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[18]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#78 Warning
+Large setup violation  
+There is a large setup violation of -4.662 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[19]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#79 Warning
+Large setup violation  
+There is a large setup violation of -4.697 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[0]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#80 Warning
+Large setup violation  
+There is a large setup violation of -4.697 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[1]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#81 Warning
+Large setup violation  
+There is a large setup violation of -4.697 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[2]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#82 Warning
+Large setup violation  
+There is a large setup violation of -4.697 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[3]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#83 Warning
+Large setup violation  
+There is a large setup violation of -4.782 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[28]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#84 Warning
+Large setup violation  
+There is a large setup violation of -4.782 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[29]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#85 Warning
+Large setup violation  
+There is a large setup violation of -4.782 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[30]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#86 Warning
+Large setup violation  
+There is a large setup violation of -4.795 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[10]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#87 Warning
+Large setup violation  
+There is a large setup violation of -4.795 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[11]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#88 Warning
+Large setup violation  
+There is a large setup violation of -4.795 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[8]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#89 Warning
+Large setup violation  
+There is a large setup violation of -4.795 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[9]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#90 Warning
+Large setup violation  
+There is a large setup violation of -4.811 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[12]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#91 Warning
+Large setup violation  
+There is a large setup violation of -4.811 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[13]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#92 Warning
+Large setup violation  
+There is a large setup violation of -4.811 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[14]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#93 Warning
+Large setup violation  
+There is a large setup violation of -4.811 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[15]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#94 Warning
+Large setup violation  
+There is a large setup violation of -4.952 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[4]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#95 Warning
+Large setup violation  
+There is a large setup violation of -4.952 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[5]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#96 Warning
+Large setup violation  
+There is a large setup violation of -4.952 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[6]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#97 Warning
+Large setup violation  
+There is a large setup violation of -4.952 ns between pps_adjust/out_index_reg[0]/C (clocked by clk_400M_clk_wiz_0) and pps_adjust/cnt_reg[7]/CE (clocked by clk_400M_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/clk_1s_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin pps_1hz/pps_out_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/index_H_cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_0_5/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_12_17/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_18_23/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_24_29/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_30_30/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_H_reg_0_3_6_11/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_0_5/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_12_17/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_18_23/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_24_29/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_30_30/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMA_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMB/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMB_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMC/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMC_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMD/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Warning
+Non-clocked sequential cell  
+The clock pin pps_adjust/memory_T_reg_0_3_6_11/RAMD_D1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock CLK_400_out/inst/clk_in1 is created on an inappropriate internal pin CLK_400_out/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+
